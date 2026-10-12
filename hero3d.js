@@ -64,7 +64,8 @@
     ctx.clearRect(0, 0, w, h);
 
     var wide = w > 900;
-    var cx = wide ? w * 0.3 : w * 0.5;
+    var rtl = document.documentElement.dir === "rtl";
+    var cx = wide ? w * (rtl ? 0.3 : 0.7) : w * 0.5;
     var cy = wide ? h * 0.52 : h * 0.62;
     var scale = Math.min(wide ? w * 0.17 : w * 0.3, h * 0.27);
     var g = ctx.createRadialGradient(cx, cy, 0, cx, cy, scale * 2.6);

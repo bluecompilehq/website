@@ -1,6 +1,6 @@
 # Blue Compile – Website
 
-Marketing site for **Blue Compile**, a software development studio.
+Hebrew marketing site for **Blue Compile** (bluecompile.co.il). English version: bluecompilehq/website-en (bluecompile.com).
 Static HTML/CSS/JS, no build step. Hebrew, RTL.
 
 ## Files
@@ -23,4 +23,4 @@ npx serve .
 - Add favicon and an Open Graph image
 
 ## Deploy
-Works as-is on GitHub Pages, Vercel or Netlify. Point `bluecompile.com` at the host.
+Works as-is on GitHub Pages, Vercel or Netlify. Served at `bluecompile.co.il` (see CNAME).
