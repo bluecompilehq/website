@@ -125,8 +125,10 @@
         <a href="mailto:blueecompile@gmail.com">blueecompile@gmail.com</a>
       </div>
     </div>
-    <!-- TODO: connect to a form backend (e.g. Formspree / Web3Forms) by setting action="" -->
-    <form class="form" id="contactForm" action="#" method="post" aria-labelledby="contactTitle">
+    <form class="form" id="contactForm" action="https://api.web3forms.com/submit" method="post" aria-labelledby="contactTitle">
+      <input type="hidden" name="access_key" value="">
+      <input type="hidden" name="subject" value="פנייה חדשה מאתר Blue Compile (עברית)">
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
       <p class="form-note">שדות המסומנים ב-<span class="req">*</span> הם שדות חובה.</p>
       <div class="row">
         <label>שם מלא <span class="req" aria-hidden="true">*</span><input type="text" name="name" autocomplete="name" required></label>
@@ -135,7 +137,7 @@
       <label>מייל <span class="req" aria-hidden="true">*</span><input type="email" name="email" autocomplete="email" dir="ltr" required></label>
       <label>ספר לנו על הפרויקט<textarea name="message" rows="4"></textarea></label>
       <label class="check"><input type="checkbox" name="consent" required><span>אני מאשר/ת את <a href="privacy.html">מדיניות הפרטיות</a> <span class="req" aria-hidden="true">*</span></span></label>
-      <div class="status" id="formStatus" role="status" data-success="תודה! קיבלנו את הפנייה ונחזור אליך בהקדם."></div>
+      <div class="status" id="formStatus" role="status" data-sending="שולח…" data-success="תודה! קיבלנו את הפנייה ונחזור אליך בהקדם." data-error="משהו השתבש והפנייה לא נשלחה. אפשר לנסות שוב, או לכתוב לנו ישירות ל-blueecompile@gmail.com."></div>
       <button type="submit" class="btn btn-primary">שליחה <span aria-hidden="true">←</span></button>
     </form>
   </div>
