@@ -21,4 +21,9 @@
     <xhtml:link rel="alternate" hreflang="he" href="https://bluecompile.co.il/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://bluecompile.com/privacy.html"/>
   </url>
+  <url>
+    <loc>https://bluecompile.co.il/systems/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
 </urlset>
