@@ -2,6 +2,8 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://gc.zgo.at 'sha256-ZF6asi5tMLktMOJkgpYoQeKQSBmZ2P6BsjSql/QqwnU='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://bluecompile.goatcounter.com; connect-src 'self' https://api.web3forms.com https://bluecompile.goatcounter.com; form-action https://api.web3forms.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>מערכת לניהול העסק במקום אקסלים ווטסאפים | Blue Compile</title>
 <meta name="description" content="מערכת אחת פשוטה לניהול לקוחות, הזמנות ותורים – בנויה בדיוק לפי איך שהעסק שלך עובד. שיחת ייעוץ חינם של 15 דקות, בלי התחייבות.">
@@ -55,9 +57,9 @@
       <input type="hidden" name="subject" value="בקשה לשיחת ייעוץ – דף מערכות לעסקים">
       <input type="hidden" name="source" value="דף נחיתה: מערכות לעסקים">
       <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <label><span>שם <span class="req" aria-hidden="true">*</span></span><input type="text" name="name" autocomplete="name" required></label>
-      <label><span>טלפון <span class="req" aria-hidden="true">*</span></span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" dir="ltr" required></label>
-      <label><span>מה הכי מציק לך היום? (לא חובה)</span><textarea name="message" rows="3"></textarea></label>
+      <label><span>שם <span class="req" aria-hidden="true">*</span></span><input type="text" name="name" maxlength="100" autocomplete="name" required></label>
+      <label><span>טלפון <span class="req" aria-hidden="true">*</span></span><input type="tel" name="phone" maxlength="30" autocomplete="tel" inputmode="tel" dir="ltr" required></label>
+      <label><span>מה הכי מציק לך היום? (לא חובה)</span><textarea name="message" maxlength="2000" rows="3"></textarea></label>
       <label class="check"><input type="checkbox" name="consent" required><span>אני מאשר/ת את <a href="../privacy.html">מדיניות הפרטיות</a> <span class="req" aria-hidden="true">*</span></span></label>
       <div class="status" id="formStatus" role="status" data-sending="שולח…" data-success="תודה! קיבלתי את הפרטים ואחזור אליך לתיאום השיחה." data-error="משהו השתבש והפרטים לא נשלחו. אפשר לנסות שוב, או לכתוב לי ישירות ל-blueecompile@gmail.com."></div>
       <button type="submit" class="btn btn-primary lp-submit">קבעו לי שיחת ייעוץ <span aria-hidden="true">←</span></button>

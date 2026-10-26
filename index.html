@@ -2,6 +2,8 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://gc.zgo.at 'sha256-ZF6asi5tMLktMOJkgpYoQeKQSBmZ2P6BsjSql/QqwnU='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://bluecompile.goatcounter.com; connect-src 'self' https://api.web3forms.com https://bluecompile.goatcounter.com; form-action https://api.web3forms.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Blue Compile | חברת פיתוח תוכנה – בניית אתרים, דפי נחיתה ומערכות לעסקים</title>
 <meta name="description" content="Blue Compile – חברת פיתוח תוכנה עם 20+ שנות ניסיון. בניית אתרים ודפי נחיתה, אפליקציות ומערכות לניהול העסק ב-.NET, Angular ו-React. מענה ראשוני תוך 6 שעות.">
@@ -235,11 +237,11 @@
       <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
       <p class="form-note">שדות המסומנים ב-<span class="req">*</span> הם שדות חובה.</p>
       <div class="row">
-        <label><span>שם מלא <span class="req" aria-hidden="true">*</span></span><input type="text" name="name" autocomplete="name" required></label>
-        <label><span>טלפון</span><input type="tel" name="phone" autocomplete="tel" dir="ltr"></label>
+        <label><span>שם מלא <span class="req" aria-hidden="true">*</span></span><input type="text" name="name" maxlength="100" autocomplete="name" required></label>
+        <label><span>טלפון</span><input type="tel" name="phone" maxlength="30" autocomplete="tel" dir="ltr"></label>
       </div>
-      <label><span>מייל <span class="req" aria-hidden="true">*</span></span><input type="email" name="email" autocomplete="email" dir="ltr" required></label>
-      <label><span>ספר לנו על הפרויקט</span><textarea name="message" rows="4"></textarea></label>
+      <label><span>מייל <span class="req" aria-hidden="true">*</span></span><input type="email" name="email" maxlength="254" autocomplete="email" dir="ltr" required></label>
+      <label><span>ספר לנו על הפרויקט</span><textarea name="message" maxlength="2000" rows="4"></textarea></label>
       <label class="check"><input type="checkbox" name="consent" required><span>אני מאשר/ת את <a href="privacy.html">מדיניות הפרטיות</a> <span class="req" aria-hidden="true">*</span></span></label>
       <div class="status" id="formStatus" role="status" data-sending="שולח…" data-success="תודה! קיבלנו את הפנייה ונחזור אליך בהקדם." data-error="משהו השתבש והפנייה לא נשלחה. אפשר לנסות שוב, או לכתוב לנו ישירות ל-blueecompile@gmail.com."></div>
       <button type="submit" class="btn btn-primary">לתיאום שיחת ייעוץ <span aria-hidden="true">←</span></button>
